@@ -1,9 +1,8 @@
-import styles from "./Header.module.css";
 import { Navigation } from "./Nav/Nav";
+import styles from "./Header.module.css";
 export const Header = () => {
   return (
-    <header>
-      <div className={styles.logo}></div>
+    <header className={styles.container}>
       <Navigation />
     </header>
   );
