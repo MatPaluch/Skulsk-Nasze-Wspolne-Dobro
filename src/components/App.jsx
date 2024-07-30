@@ -9,11 +9,11 @@ import { PageNotFound } from "../pages/PageNotFound";
 function App() {
   return (
     <Routes>
-      <Route path="/Skulsk-Nasze-Wspolne-Dobro/" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="/Skulsk-Nasze-Wspolne-Dobro/about" element={<AboutPage />} />
-        <Route path="/Skulsk-Nasze-Wspolne-Dobro/statute" element={<StatutePage />} />
-        <Route path="/Skulsk-Nasze-Wspolne-Dobro/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/statute" element={<StatutePage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
