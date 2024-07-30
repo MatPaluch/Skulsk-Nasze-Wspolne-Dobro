@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className={styles.logo}></div>
         <div className={styles.wrapper}>
           <div>
-            <h4>Social Media</h4>
+            <h4>Portale Społecznościowe</h4>
             <ul className={styles.listSocial}>
               <li>
                 <ReactSVG
@@ -18,7 +18,10 @@ export const Footer = () => {
                     svg.setAttribute("fill", "white");
                   }}
                 />
-                <a href="https://www.facebook.com" target="_blank">
+                <a
+                  href="https://www.facebook.com/p/Skulsk-Nasze-Wspólne-Dobro-100069142384712/"
+                  target="_blank"
+                >
                   Facebook
                 </a>
               </li>
