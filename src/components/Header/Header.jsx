@@ -1,4 +1,4 @@
-import { Navigation } from "./Nav/Nav";
+import { Navigation } from "../Nav/Nav";
 import styles from "./Header.module.css";
 export const Header = () => {
   return (

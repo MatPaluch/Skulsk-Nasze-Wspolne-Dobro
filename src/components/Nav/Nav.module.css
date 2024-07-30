@@ -1,21 +1,18 @@
 .navBar {
   position: fixed;
-
   top: 20px;
   left: 20px;
   right: 20px;
   background-color: white;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   z-index: 999;
 }
 .logo {
   width: 410px;
   height: 90px;
-  background-image: url(/src/assets/logo.jpg);
+  background-image: url("/src/assets/logo.jpg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;

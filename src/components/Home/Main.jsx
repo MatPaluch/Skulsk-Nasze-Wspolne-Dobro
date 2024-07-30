@@ -1,14 +1,19 @@
 import styles from "./Main.module.css";
 export const Main = () => {
   const participants = [
-    { name: "Iwona Milas", role: "Prezes zarządu" },
-    { name: "Beata Małek", role: "Wiceprezes zarządu" },
-    { name: "Agnieszka Jaśkowiak", role: "Skarbnik" },
+    { id: 1, name: "Iwona Milas", role: "Prezes zarządu" },
+    { id: 2, name: "Beata Małek", role: "Wiceprezes zarządu" },
+    { id: 3, name: "Agnieszka Jaśkowiak", role: "Skarbnik" },
+    { id: 4, name: "Dorota Walicka", role: "Członek organu nadzoru" },
+    { id: 5, name: "Bolesława Hajdrych", role: "Członek organu nadzoru" },
+    { id: 6, name: "Bożena Prętkowska", role: "Członek organu nadzoru" },
   ];
   return (
     <main>
       <section className={styles.hero}>
-        <h1 className={styles.nameHeader}>Stowarzyszenie "SKULSK - NASZE WSPÓLNE DOBRO"</h1>
+        <h1 className={styles.nameHeader}>
+          Stowarzyszenie &quot;SKULSK - NASZE WSPÓLNE DOBRO&quot;
+        </h1>
       </section>
       <section className={styles.container}>
         <div className={styles.wraper}>
@@ -26,7 +31,7 @@ export const Main = () => {
           <div>
             <ul className={styles.participantList}>
               {participants.map((ob) => (
-                <li>
+                <li key={ob.id}>
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"

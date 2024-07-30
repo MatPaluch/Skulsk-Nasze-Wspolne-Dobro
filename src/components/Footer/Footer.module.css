@@ -1,0 +1,51 @@
+.foot {
+  background-color: seagreen;
+  color: white;
+}
+.logo {
+  margin: auto 0;
+  width: 410px;
+  height: 90px;
+  background-image: url("/src/assets/logo.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  display: flex;
+  gap: 50px;
+}
+.copy {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.listSocial {
+  list-style: none;
+  padding: 0;
+}
+.listSocial > li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listSocial > li > a,
+.nav > li > a {
+  color: white;
+}
+.listSocial > li > a:hover,
+.nav > li > a:hover {
+  color: rgb(45, 190, 81);
+}
