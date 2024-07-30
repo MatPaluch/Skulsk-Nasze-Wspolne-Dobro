@@ -40,19 +40,19 @@ export const Footer = () => {
             <h4>Skulsk - Nasze Wspólne Dobro</h4>
             <ul className={styles.nav}>
               <li>
-                <Link to="news">Aktualności</Link>
+                <Link to="/Skulsk-Nasze-Wspolne-Dobro/news">Aktualności</Link>
               </li>
               <li>
-                <Link to="about">O nas</Link>
+                <Link to="/Skulsk-Nasze-Wspolne-Dobro/about">O nas</Link>
               </li>
               <li>
-                <Link to="projects">Nasze projekty</Link>
+                <Link to="/Skulsk-Nasze-Wspolne-Dobro/projects">Nasze projekty</Link>
               </li>
               <li>
-                <Link to="statute">Statut</Link>
+                <Link to="/Skulsk-Nasze-Wspolne-Dobro/statute">Statut</Link>
               </li>
               <li>
-                <Link to="contact">Kontakt</Link>
+                <Link to="/Skulsk-Nasze-Wspolne-Dobro/contact">Kontakt</Link>
               </li>
             </ul>
           </div>

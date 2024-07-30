@@ -4,24 +4,24 @@ import styles from "./Nav.module.css";
 export const Navigation = () => {
   return (
     <nav className={styles.navBar}>
-      <NavLink to="/">
+      <NavLink to="/Skulsk-Nasze-Wspolne-Dobro">
         <div className={styles.logo}></div>
       </NavLink>
       <ul className={styles.navList}>
         <li>
-          <NavLink to="/news">Aktualności</NavLink>
+          <NavLink to="/Skulsk-Nasze-Wspolne-Dobro/news">Aktualności</NavLink>
         </li>
         <li>
-          <NavLink to="/about">O nas</NavLink>
+          <NavLink to="/Skulsk-Nasze-Wspolne-Dobro/about">O nas</NavLink>
         </li>
         <li>
-          <NavLink to="/projects">Nasze projekty</NavLink>
+          <NavLink to="/Skulsk-Nasze-Wspolne-Dobro/projects">Nasze projekty</NavLink>
         </li>
         <li>
-          <NavLink to="/statute">Statut</NavLink>
+          <NavLink to="/Skulsk-Nasze-Wspolne-Dobro/statute">Statut</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Kontakt</NavLink>
+          <NavLink to="/Skulsk-Nasze-Wspolne-Dobro/contact">Kontakt</NavLink>
         </li>
       </ul>
     </nav>
