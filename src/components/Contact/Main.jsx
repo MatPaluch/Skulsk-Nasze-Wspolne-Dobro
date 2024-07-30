@@ -12,7 +12,7 @@ export const Main = () => {
           <ul className={styles.list}>
             <li>
               <ReactSVG
-                src="/src/assets/location.svg"
+                src="./src/assets/location.svg"
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");
@@ -29,7 +29,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="/src/assets/phone.svg"
+                src="./src/assets/phone.svg"
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");
@@ -44,7 +44,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="/src/assets/envelop.svg"
+                src="./src/assets/envelop.svg"
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");

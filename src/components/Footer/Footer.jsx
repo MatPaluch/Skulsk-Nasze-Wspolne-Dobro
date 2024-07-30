@@ -13,7 +13,7 @@ export const Footer = () => {
               <li>
                 <ReactSVG
                   className={styles.svg}
-                  src="/src/assets/facebook.svg"
+                  src="./src/assets/facebook.svg"
                   beforeInjection={(svg) => {
                     svg.setAttribute("fill", "white");
                   }}
@@ -28,7 +28,7 @@ export const Footer = () => {
               <li>
                 <ReactSVG
                   className={styles.svg}
-                  src="/src/assets/linkedin2.svg"
+                  src="./src/assets/linkedin2.svg"
                   beforeInjection={(svg) => {
                     svg.setAttribute("fill", "white");
                   }}
