@@ -1,6 +1,11 @@
 import { HeroSection } from "../Hero/HeroSection.jsx";
 import { ReactSVG } from "react-svg";
 import styles from "./Main.module.css";
+import location from "../../assets/location.svg";
+import phone from "../../assets/phone.svg";
+import envelop from "../../assets/envelop.svg";
+import creditCard from "../../assets/credit-card.svg";
+import office from "../../assets/office.svg";
 
 export const Main = () => {
   return (
@@ -12,7 +17,7 @@ export const Main = () => {
           <ul className={styles.list}>
             <li>
               <ReactSVG
-                src="./src/assets/location.svg"
+                src={location}
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");
@@ -29,7 +34,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="./src/assets/phone.svg"
+                src={phone}
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "46");
                   svg.setAttribute("height", "46");
@@ -44,7 +49,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="./src/assets/envelop.svg"
+                src={envelop}
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");
@@ -59,7 +64,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="./src/assets/credit-card.svg"
+                src={creditCard}
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");
@@ -74,7 +79,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="./src/assets/office.svg"
+                src={office}
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");
@@ -89,7 +94,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="./src/assets/office.svg"
+                src={office}
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");
@@ -104,7 +109,7 @@ export const Main = () => {
             </li>
             <li>
               <ReactSVG
-                src="./src/assets/office.svg"
+                src={office}
                 beforeInjection={(svg) => {
                   svg.setAttribute("width", "48");
                   svg.setAttribute("height", "48");

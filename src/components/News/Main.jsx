@@ -6,7 +6,7 @@ import { ContactUs } from "../ContactUs/ContactUs";
 export const Main = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/Skulsk-Nasze-Wspolne-Dobro/news/dzialalnosc-na-rzecz-osob-niepelnosprawnych");
+    navigate("/news/dzialalnosc-na-rzecz-osob-niepelnosprawnych");
   };
   return (
     <main>
