@@ -2,6 +2,7 @@ import { HeroSection } from "../Hero/HeroSection";
 import styles from "./Main.module.css";
 import invalidHelper from "../../assets/invalidHelper.jpg";
 import { useNavigate } from "react-router-dom";
+import { ContactUs } from "../ContactUs/ContactUs";
 export const Main = () => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -25,6 +26,7 @@ export const Main = () => {
           </div>
         </div>
       </section>
+      <ContactUs />
     </main>
   );
 };

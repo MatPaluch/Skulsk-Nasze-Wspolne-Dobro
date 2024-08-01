@@ -1,6 +1,7 @@
 import styles from "./Main.module.css";
 import userSvg from "../../assets/user.svg";
 import { ReactSVG } from "react-svg";
+import { ContactUs } from "../ContactUs/ContactUs.jsx";
 export const Main = () => {
   const participants = [{ id: 1, name: "Milas", role: "Master" }];
   return (
@@ -52,6 +53,7 @@ export const Main = () => {
           </div>
         )}
       </section>
+      <ContactUs />
     </main>
   );
 };

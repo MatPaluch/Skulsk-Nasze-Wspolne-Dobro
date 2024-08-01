@@ -67,9 +67,54 @@ export const Main = () => {
                 }}
               />
               <div>
-                <b>Numer konta bankowego</b>
+                <b>Numer konta bankowego:</b>
                 <br />
                 54 8534 0006 0100 0102 2000 0010
+              </div>
+            </li>
+            <li>
+              <ReactSVG
+                src="./src/assets/office.svg"
+                beforeInjection={(svg) => {
+                  svg.setAttribute("width", "48");
+                  svg.setAttribute("height", "48");
+                  svg.setAttribute("fill", "seagreen");
+                }}
+              />
+              <div>
+                <b>NIP:</b>
+                <br />
+                665-297-26-20
+              </div>
+            </li>
+            <li>
+              <ReactSVG
+                src="./src/assets/office.svg"
+                beforeInjection={(svg) => {
+                  svg.setAttribute("width", "48");
+                  svg.setAttribute("height", "48");
+                  svg.setAttribute("fill", "seagreen");
+                }}
+              />
+              <div>
+                <b>REGON:</b>
+                <br />
+                301686728
+              </div>
+            </li>
+            <li>
+              <ReactSVG
+                src="./src/assets/office.svg"
+                beforeInjection={(svg) => {
+                  svg.setAttribute("width", "48");
+                  svg.setAttribute("height", "48");
+                  svg.setAttribute("fill", "seagreen");
+                }}
+              />
+              <div>
+                <b>KRS:</b>
+                <br />
+                0000379501
               </div>
             </li>
           </ul>

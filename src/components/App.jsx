@@ -11,7 +11,7 @@ import { Articles } from "../pages/Articles";
 function App() {
   return (
     <Routes>
-      <Route path="Skulsk-Nasze-Wspolne-Dobro" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="news" element={<NewsPage />}></Route>{" "}
         <Route path="news/:name" element={<Articles />} />

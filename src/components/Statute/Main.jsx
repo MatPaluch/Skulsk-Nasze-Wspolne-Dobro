@@ -1,3 +1,4 @@
+import { ContactUs } from "../ContactUs/ContactUs";
 import { HeroSection } from "../Hero/HeroSection";
 import styles from "./Main.module.css";
 export const Main = () => {
@@ -769,6 +770,7 @@ export const Main = () => {
           </li>
         </ol>
       </section>
+      <ContactUs />
     </main>
   );
 };

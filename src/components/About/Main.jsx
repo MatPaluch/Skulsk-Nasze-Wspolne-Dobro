@@ -1,4 +1,5 @@
 import { HeroSection } from "../Hero/HeroSection.jsx";
+import { ContactUs } from "../ContactUs/ContactUs.jsx";
 import styles from "./Main.module.css";
 export const Main = () => {
   return (
@@ -21,6 +22,7 @@ export const Main = () => {
           organizacje pozarządowe.
         </p>
       </section>
+      <ContactUs />
     </main>
   );
 };
