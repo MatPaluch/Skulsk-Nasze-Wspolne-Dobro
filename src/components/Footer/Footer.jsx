@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer className={styles.foot}>
       <div className={styles.container}>
-        <Link to="/Skulsk-Nasze-Wspolne-Dobro/">
+        <Link to="/">
           <div className={styles.logo}></div>
         </Link>
         <div className={styles.wrapper}>
@@ -48,19 +48,19 @@ export const Footer = () => {
             <h4>Skulsk - Nasze Wspólne Dobro</h4>
             <ul className={styles.nav}>
               <li>
-                <Link to="/Skulsk-Nasze-Wspolne-Dobro/news">Aktualności</Link>
+                <Link to="news">Aktualności</Link>
               </li>
               <li>
-                <Link to="/Skulsk-Nasze-Wspolne-Dobro/about">O nas</Link>
+                <Link to="about">O nas</Link>
               </li>
               <li>
-                <Link to="/Skulsk-Nasze-Wspolne-Dobro/projects">Nasze projekty</Link>
+                <Link to="projects">Nasze projekty</Link>
               </li>
               <li>
-                <Link to="/Skulsk-Nasze-Wspolne-Dobro/statute">Statut</Link>
+                <Link to="statute">Statut</Link>
               </li>
               <li>
-                <Link to="/Skulsk-Nasze-Wspolne-Dobro/contact">Kontakt</Link>
+                <Link to="contact">Kontakt</Link>
               </li>
             </ul>
           </div>
