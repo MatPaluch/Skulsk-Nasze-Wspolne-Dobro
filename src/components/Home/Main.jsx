@@ -1,13 +1,6 @@
 import styles from "./Main.module.css";
 export const Main = () => {
-  const participants = [
-    { id: 1, name: "Iwona Milas", role: "Prezes zarządu" },
-    { id: 2, name: "Beata Małek", role: "Wiceprezes zarządu" },
-    { id: 3, name: "Agnieszka Jaśkowiak", role: "Skarbnik" },
-    { id: 4, name: "Dorota Walicka", role: "Członek organu nadzoru" },
-    { id: 5, name: "Bolesława Hajdrych", role: "Członek organu nadzoru" },
-    { id: 6, name: "Bożena Prętkowska", role: "Członek organu nadzoru" },
-  ];
+  const participants = []; // management will change
   return (
     <main>
       <section className={styles.hero}>

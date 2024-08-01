@@ -1,6 +1,9 @@
 import { ReactSVG } from "react-svg";
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
+import facebookSvg from "../../assets/facebook.svg";
+import linkedinSvg from "../../assets/linkedin2.svg";
+
 export const Footer = () => {
   return (
     <footer className={styles.foot}>
@@ -13,7 +16,7 @@ export const Footer = () => {
               <li>
                 <ReactSVG
                   className={styles.svg}
-                  src="./src/assets/facebook.svg"
+                  src={facebookSvg}
                   beforeInjection={(svg) => {
                     svg.setAttribute("fill", "white");
                   }}
@@ -28,7 +31,7 @@ export const Footer = () => {
               <li>
                 <ReactSVG
                   className={styles.svg}
-                  src="./src/assets/linkedin2.svg"
+                  src={linkedinSvg}
                   beforeInjection={(svg) => {
                     svg.setAttribute("fill", "white");
                   }}
