@@ -8,7 +8,9 @@ export const Footer = () => {
   return (
     <footer className={styles.foot}>
       <div className={styles.container}>
-        <div className={styles.logo}></div>
+        <Link to="/Skulsk-Nasze-Wspolne-Dobro/">
+          <div className={styles.logo}></div>
+        </Link>
         <div className={styles.wrapper}>
           <div>
             <h4>Portale Społecznościowe</h4>

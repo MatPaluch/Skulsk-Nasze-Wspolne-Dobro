@@ -4,7 +4,7 @@ import styles from "./Nav.module.css";
 export const Navigation = () => {
   return (
     <nav className={styles.navBar}>
-      <NavLink to="/Skulsk-Nasze-Wspolne-Dobro">
+      <NavLink to="/Skulsk-Nasze-Wspolne-Dobro/">
         <div className={styles.logo}></div>
       </NavLink>
       <ul className={styles.navList}>

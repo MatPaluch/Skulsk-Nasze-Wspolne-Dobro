@@ -3,7 +3,6 @@
   color: white;
 }
 .logo {
-  margin: auto 0;
   width: 410px;
   height: 90px;
   background-image: url("/src/assets/logo.jpg");
@@ -16,6 +15,7 @@
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .wrapper {

@@ -1,6 +1,8 @@
 import styles from "./Main.module.css";
+import userSvg from "../../assets/user.svg";
+import { ReactSVG } from "react-svg";
 export const Main = () => {
-  const participants = []; // management will change
+  const participants = [{ id: 1, name: "Milas", role: "Master" }];
   return (
     <main>
       <section className={styles.hero}>
@@ -19,31 +21,36 @@ export const Main = () => {
         </div>
       </section>
       <section className={styles.container}>
-        <div>
-          <h2>Poznaj nas</h2>
+        {participants.length > 1 && (
           <div>
-            <ul className={styles.participantList}>
-              {participants.map((ob) => (
-                <li key={ob.id}>
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="128"
-                    height="128"
-                    viewBox="0 0 32 32"
-                    className={styles.user}
-                  >
-                    <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
-                  </svg>
-                  <div className={styles.divMembers}>
-                    <h3>{ob.name}</h3>
-                    <p>{ob.role}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <h2>Poznaj nas</h2>
+            <div>
+              <ul className={styles.participantList}>
+                {participants.map((ob) => (
+                  <li key={ob.id}>
+                    <ReactSVG
+                      src={userSvg}
+                      beforeInjection={(svg) => {
+                        svg.setAttribute("fill", "rgb(45, 211, 67)");
+                        svg.setAttribute("width", "86");
+                        svg.setAttribute("height", "86");
+                        svg.setAttribute("stroke", "black");
+                        svg.setAttribute("stroke-width", "1");
+                      }}
+                      afterInjection={(svg) => {
+                        svg.parentElement.classList.add(styles.user);
+                      }}
+                    />
+                    <div className={styles.divMembers}>
+                      <h3>{ob.name}</h3>
+                      <p>{ob.role}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
+        )}
       </section>
     </main>
   );

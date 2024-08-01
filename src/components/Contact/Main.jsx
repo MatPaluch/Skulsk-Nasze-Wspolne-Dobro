@@ -31,15 +31,15 @@ export const Main = () => {
               <ReactSVG
                 src="./src/assets/phone.svg"
                 beforeInjection={(svg) => {
-                  svg.setAttribute("width", "48");
-                  svg.setAttribute("height", "48");
+                  svg.setAttribute("width", "46");
+                  svg.setAttribute("height", "46");
                   svg.setAttribute("fill", "seagreen");
                 }}
               />
               <div>
                 <b>Telefon:</b>
                 <br />
-                <a href="tel:+48 123 456 789">+48 123 456 789</a>
+                <a href="tel:+48 512 194 260">+48 512 194 260</a>
               </div>
             </li>
             <li>
@@ -55,6 +55,21 @@ export const Main = () => {
                 <b>Poczta:</b>
                 <br />
                 <a href="mailto:stowarzyszenie@gmail.com">stowarzyszenie@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <ReactSVG
+                src="./src/assets/credit-card.svg"
+                beforeInjection={(svg) => {
+                  svg.setAttribute("width", "48");
+                  svg.setAttribute("height", "48");
+                  svg.setAttribute("fill", "seagreen");
+                }}
+              />
+              <div>
+                <b>Numer konta bankowego</b>
+                <br />
+                54 8534 0006 0100 0102 2000 0010
               </div>
             </li>
           </ul>
