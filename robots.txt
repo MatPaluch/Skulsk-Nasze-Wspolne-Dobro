@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /public/
+Sitemap: https://skulsk-nasze-wspolne-dobro.pl/sitemap.xml
