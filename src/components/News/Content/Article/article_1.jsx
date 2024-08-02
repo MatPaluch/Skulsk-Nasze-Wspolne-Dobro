@@ -1,5 +1,7 @@
 import { HeroSection } from "../../../Hero/HeroSection";
 import img from "../../../../assets/imgStick.png";
+import logotypes from "../../../../assets/logotypwojewodztwawielkopolskiegoiherbsamorzaduwojewodztwawielkopolskiego.jpg";
+import logo from "../../../../assets/logo.jpg";
 import styles from "./article_1.module.css";
 export const Art1 = () => {
   return (
@@ -7,13 +9,15 @@ export const Art1 = () => {
       <HeroSection />
       <section className={styles.container}>
         <div className={styles.headerArticle}>
-          <h2>
-            „Działalność na rzecz osób niepełnosprawnych - świadczenie usług wspierających, które
-            mają na celu umożliwienie lub wspomaganie niezależnego życia osób niepełnosprawnych, a w
-            szczególności usług asystencji osobistej”
-          </h2>
-          <img src={img} className={styles.imgStick} />
+          <img src={logotypes} className={styles.logotypes} />
+          <img src={logo} className={styles.logo} />
         </div>
+         <h2>
+          „Działalność na rzecz osób niepełnosprawnych - świadczenie usług wspierających, które
+          mają na celu umożliwienie lub wspomaganie niezależnego życia osób niepełnosprawnych, a w
+          szczególności usług asystencji osobistej”
+        </h2>
+        <img src={img} className={styles.imgStick} />
         <p className={styles.links}>
           Projekt współfinansowany ze środków{" "}
           <a href="https://www.facebook.com/fundusz.pfron">

@@ -6,13 +6,21 @@
 .headerArticle {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
 }
 .headerArticle > h2 {
   text-align: start;
 }
 .imgStick {
-  width: 250px;
+  width: 200px;
+  height: 100%;
+  float: right;
+}
+.logo{
+  width: 300px;
+  height: 100%;
+}
+.logotypes{
+  width: 350px;
   height: 100%;
 }
 .links > a {
