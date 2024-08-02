@@ -5,7 +5,7 @@
 }
 .headerArticle {
   display: flex;
-  justify-content: spacebetween;
+  justify-content: space-between;
 }
 .headerArticle > h2 {
   text-align: start;
