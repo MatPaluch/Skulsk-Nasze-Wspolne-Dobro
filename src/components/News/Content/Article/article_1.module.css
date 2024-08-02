@@ -4,17 +4,23 @@
   padding: 30px;
 }
 .headerArticle {
+  display: flex;
+  justify-content: spacebetween;
 }
 .headerArticle > h2 {
   text-align: start;
 }
 .imgStick {
-  width: 250px;
+  width: 200px;
   height: 100%;
   float: right;
 }
+.logo{
+  width: 300px;
+  height: 100%;
+}
 .logotypes{
-   width: 350px;
+  width: 350px;
   height: 100%;
 }
 .links > a {
