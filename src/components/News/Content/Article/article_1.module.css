@@ -4,9 +4,6 @@
   padding: 30px;
 }
 .headerArticle {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
 }
 .headerArticle > h2 {
   text-align: start;
@@ -14,6 +11,7 @@
 .imgStick {
   width: 250px;
   height: 100%;
+  float: right;
 }
 .logotypes{
    width: 350px;
