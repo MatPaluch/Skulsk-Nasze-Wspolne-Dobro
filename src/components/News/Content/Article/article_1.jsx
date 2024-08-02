@@ -1,6 +1,6 @@
 import { HeroSection } from "../../../Hero/HeroSection";
 import img from "../../../../assets/imgStick.png";
-import logotypes from "../../../../assets/imgStick.jpg";
+import logotypes from "../../../../assets/logotypwojewodztwawielkopolskiegoiherbsamorzaduwojewodztwawielkopolskiego.jpg";
 import styles from "./article_1.module.css";
 export const Art1 = () => {
   return (
