@@ -1,5 +1,6 @@
 import { HeroSection } from "../../../Hero/HeroSection";
 import img from "../../../../assets/imgStick.png";
+import logotypes from "../../../../assets/imgStick.jpg";
 import styles from "./article_1.module.css";
 export const Art1 = () => {
   return (
@@ -7,6 +8,7 @@ export const Art1 = () => {
       <HeroSection />
       <section className={styles.container}>
         <div className={styles.headerArticle}>
+          <img src={logotypes} className={styles.logotypes} />
           <h2>
             „Działalność na rzecz osób niepełnosprawnych - świadczenie usług wspierających, które
             mają na celu umożliwienie lub wspomaganie niezależnego życia osób niepełnosprawnych, a w
