@@ -15,9 +15,10 @@ export const Main = () => {
         <div className={styles.wraper}>
           <h2>Kilka słów o naszej działalności</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque officia voluptatum
-            inventore officiis earum animi cum aut ipsam beatae aperiam suscipit quas, laudantium ut
-            nisi nemo, illo accusantium magni doloremque.
+            "Skulsk - Nasze Wspólne Dobro" stowarzyszenie, które angażuje się w działalność
+            społeczną i kulturalną w gminie Skulsk. Organizacja podejmuje inicjatywy na rzecz
+            rozwoju lokalnej społeczności, promuje lokalne tradycje i dziedzictwo kulturowe, a także
+            wspiera różnorodne projekty mające na celu poprawę jakości życia mieszkańców.
           </p>
         </div>
       </section>
