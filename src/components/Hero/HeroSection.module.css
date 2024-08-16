@@ -1,16 +1,16 @@
 .hero {
   background-image: url(/src/assets/hero_image.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   width: 100%;
-  height: 30vh;
+  height: 300px;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
 }
 .nameHeader {
-  font-size: 3vw;
+  font-size: 48px;
   color: white;
   animation: glow 1200ms infinite alternate;
 }
@@ -26,5 +26,15 @@
   position: absolute;
   background-color: rgba(24, 24, 24, 0.445);
   width: 100%;
-  height: 30vh;
+  height: 300px;
+}
+@media screen and (max-width:600px) {
+  .nameHeader{
+    padding: 0 30px;
+    font-size: 30px;
+  }
+  .hero{
+    align-items: center;
+  }
+  
 }

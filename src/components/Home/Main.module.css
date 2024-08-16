@@ -8,9 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 30px;
 }
 .nameHeader {
-  font-size: 3vw;
+  font-size: 48px;
   color: white;
   animation: glow 1200ms infinite alternate;
 }
@@ -61,4 +62,9 @@
 }
 .divMembers > p {
   margin: 0;
+}
+@media screen and (max-width:600px) {
+  .nameHeader {
+    font-size: 30px;
+  }
 }

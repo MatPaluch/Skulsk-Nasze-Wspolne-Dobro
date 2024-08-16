@@ -14,13 +14,23 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 980px) {
+  .logo {
+    width: 100vw;
+    max-width: 500px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
 .wrapper {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 .copy {
   margin: 0;
