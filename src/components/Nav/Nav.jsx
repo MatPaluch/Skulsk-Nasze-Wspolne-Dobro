@@ -4,6 +4,7 @@ import { useMediaQuery } from "@mui/material";
 import { ReactSVG } from "react-svg";
 import menu from "../../assets/menu3.svg";
 import { useState } from "react";
+import { MobileNav } from "../MobileNav/MobileNav";
 
 export const Navigation = () => {
   const [isActive, setIsActive] = useState(false);
@@ -12,6 +13,7 @@ export const Navigation = () => {
   const mobileMenuHandler = (ev) => {
     setIsActive(!isActive);
   };
+  
   return (
     <nav className={styles.navBar}>
       <NavLink to="/">
@@ -45,47 +47,7 @@ export const Navigation = () => {
           </li>
         </ul>
       )}
-      {isActive && isSmallScreen && (
-        <div className={styles.mobileNav}>
-          <div className={styles.divButton}>
-            <button className={styles.mobileButton} onClick={mobileMenuHandler}>
-              <ReactSVG
-                src={menu}
-                beforeInjection={(svg) => {
-                  svg.setAttribute("fill", "white");
-                }}
-              />
-            </button>
-          </div>
-          <ul className={styles.mobileList}>
-            <li>
-              <NavLink to="news" onClick={mobileMenuHandler}>
-                Aktualności
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="about" onClick={mobileMenuHandler}>
-                O nas
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="projects" onClick={mobileMenuHandler}>
-                Nasze projekty
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="statute" onClick={mobileMenuHandler}>
-                Statut
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="contact" onClick={mobileMenuHandler}>
-                Kontakt
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      )}
+      {isActive && <MobileNav isSmallScreen={isSmallScreen} styles={styles} isActive={isActive} mobileMenuHandler={mobileMenuHandler} />}
     </nav>
   );
 };

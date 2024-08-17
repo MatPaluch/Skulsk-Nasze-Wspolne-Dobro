@@ -7,9 +7,7 @@
   display: flex;
   justify-content: space-between;
 }
-.headerArticle > h2 {
-  text-align: start;
-}
+
 .imgStick {
   width: 200px;
   height: 100%;
@@ -29,4 +27,18 @@
 }
 .links > a:hover {
   color: rgb(8, 122, 24);
+}
+@media screen and (max-width:700px) {
+  .container > h2 {
+    font-size: 20px;
+  }
+  .logotypes{
+    width: 320px;
+  }
+  .headerArticle{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
 }
