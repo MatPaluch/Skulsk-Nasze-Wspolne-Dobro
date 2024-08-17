@@ -13,7 +13,7 @@ export const MobileNav = ({ isSmallScreen, mobileMenuHandler }) => {
 
     const handleLinkClick = () => {
         setShow(false);
-        setTimeout(() => mobileMenuHandler(), 300);
+        setTimeout(() => mobileMenuHandler(), 250);
     };
 
     return (
