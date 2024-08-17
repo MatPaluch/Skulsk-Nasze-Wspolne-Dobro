@@ -7,8 +7,8 @@ import styles from './MobileNav.module.css';
 export const MobileNav = ({ isSmallScreen, mobileMenuHandler }) => {
     const [show, setShow] = useState(false);
     useEffect(() => {
-        setShow(true);
-        return () => setShow(false);
+        const timeOut=setTimeOut(()=>setShow(true),20);
+        return () => clearTimeout(timeOut);
     }, []);
 
     const handleLinkClick = () => {
