@@ -5,6 +5,9 @@ import logo from "../../../../assets/logo.jpg";
 import styles from "./article_1.module.css";
 import { ReactSVG } from "react-svg";
 import file from "../../../../assets/file-text.svg";
+import Formularz_zgloszeniowy from "../../../../assets/Formularz_zgłoszeniowy.odt";
+import Akceptacja_asystenta from "../../../../assets/Akceptacja_asystenta.docx";
+import Katalog_uslug from "../../../../assets/Katalog_usług.docx";
 export const Art1 = () => {
   return (
     <main>
@@ -96,7 +99,7 @@ export const Art1 = () => {
           <li>
             <a
               className={styles.downloadLinks}
-              href="../../../../assets/Formularz_zgłoszeniowy.odt"
+              href={Formularz_zgloszeniowy}
               download="Formularz_zgłoszeniowy.odt"
             >
               <ReactSVG
@@ -114,7 +117,7 @@ export const Art1 = () => {
           <li>
             <a
               className={styles.downloadLinks}
-              href="../../../../assets/Akceptacja_asystenta.docx"
+              href={Akceptacja_asystenta}
               download="Akceptacja_asystenta.docx"
             >
               <ReactSVG
@@ -130,11 +133,7 @@ export const Art1 = () => {
             </a>
           </li>
           <li>
-            <a
-              className={styles.downloadLinks}
-              href="../../../../assets/Katalog_usług.docx"
-              download="Katalog_usług.docx"
-            >
+            <a className={styles.downloadLinks} href={Katalog_uslug} download="Katalog_usług.docx">
               <ReactSVG
                 className={styles.svgFile}
                 src={file}
