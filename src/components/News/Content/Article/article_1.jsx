@@ -3,6 +3,8 @@ import img from "../../../../assets/imgStick.png";
 import logotypes from "../../../../assets/logotypwojewodztwawielkopolskiegoiherbsamorzaduwojewodztwawielkopolskiego.jpg";
 import logo from "../../../../assets/logo.jpg";
 import styles from "./article_1.module.css";
+import { ReactSVG } from "react-svg";
+import file from "../../../../assets/file-text.svg";
 export const Art1 = () => {
   return (
     <main>
@@ -12,9 +14,9 @@ export const Art1 = () => {
           <img src={logotypes} className={styles.logotypes} />
           <img src={logo} className={styles.logo} />
         </div>
-         <h2>
-          „Działalność na rzecz osób niepełnosprawnych - świadczenie usług wspierających, które
-          mają na celu umożliwienie lub wspomaganie niezależnego życia osób niepełnosprawnych, a w
+        <h2>
+          „Działalność na rzecz osób niepełnosprawnych - świadczenie usług wspierających, które mają
+          na celu umożliwienie lub wspomaganie niezależnego życia osób niepełnosprawnych, a w
           szczególności usług asystencji osobistej”
         </h2>
         <img src={img} className={styles.imgStick} />
@@ -74,24 +76,77 @@ export const Art1 = () => {
             średnio 6h/UP - łącznie w ramach projektu zaplanowano 120 godzin wsparcia, w ramach
             następującego wsparcia specjalistycznego:
           </i>
-          <ul>
-            <li>
-              <b>Wsparcie prawne: </b>45 godzin w ramach projektu - przełamanie barier prawnych
-              związanych np. z mieszkaniem, prawem pracy, opieką, prawem spadkowym,
-              ubezwłasnowolnieniem osoby niepełnosprawnej.
-            </li>
-            <li>
-              <b>Wsparcie psychologiczne: </b>45 godzin - w celu przełamania barier psychologicznych
-              i traum UP związanych z ich sytuacją związaną z chorobą, niepełnosprawnością, które
-              często przyczyniają się do wycofania z życia społecznego itp.
-            </li>
-          </ul>
-          <p>Łącznie 90 godzin.</p>
         </p>
-        <h3>Dokumenty informacyjne i rekrutacyjne stanowią załączniki:</h3>
         <ul>
-          <li>Dokument 1</li>
-          <li>Dokument 2</li>
+          <li>
+            <b>Wsparcie prawne: </b>45 godzin w ramach projektu - przełamanie barier prawnych
+            związanych np. z mieszkaniem, prawem pracy, opieką, prawem spadkowym,
+            ubezwłasnowolnieniem osoby niepełnosprawnej.
+          </li>
+          <li>
+            <b>Wsparcie psychologiczne: </b>45 godzin - w celu przełamania barier psychologicznych i
+            traum UP związanych z ich sytuacją związaną z chorobą, niepełnosprawnością, które często
+            przyczyniają się do wycofania z życia społecznego itp.
+          </li>
+        </ul>
+        <p>Łącznie 90 godzin.</p>
+
+        <h3>Dokumenty informacyjne i rekrutacyjne stanowią załączniki do pobrania:</h3>
+        <ul className={styles.downloadList}>
+          <li>
+            <a
+              className={styles.downloadLinks}
+              href="../../../../assets/Formularz_zgłoszeniowy.odt"
+              download="Formularz_zgłoszeniowy.odt"
+            >
+              <ReactSVG
+                className={styles.svgFile}
+                src={file}
+                beforeInjection={(svg) => {
+                  svg.setAttribute("width", "48");
+                  svg.setAttribute("height", "48");
+                  svg.setAttribute("fill", "rgb(75, 185, 103)");
+                }}
+              />
+              Formularz zgłoszeniowy
+            </a>
+          </li>
+          <li>
+            <a
+              className={styles.downloadLinks}
+              href="../../../../assets/Akceptacja_asystenta.docx"
+              download="Akceptacja_asystenta.docx"
+            >
+              <ReactSVG
+                className={styles.svgFile}
+                src={file}
+                beforeInjection={(svg) => {
+                  svg.setAttribute("width", "48");
+                  svg.setAttribute("height", "48");
+                  svg.setAttribute("fill", "rgb(75, 185, 103)");
+                }}
+              />
+              Akceptacja asystenta
+            </a>
+          </li>
+          <li>
+            <a
+              className={styles.downloadLinks}
+              href="../../../../assets/Katalog_usług.docx"
+              download="Katalog_usług.docx"
+            >
+              <ReactSVG
+                className={styles.svgFile}
+                src={file}
+                beforeInjection={(svg) => {
+                  svg.setAttribute("width", "48");
+                  svg.setAttribute("height", "48");
+                  svg.setAttribute("fill", "rgb(75, 185, 103)");
+                }}
+              />
+              Katalog_usług
+            </a>
+          </li>
         </ul>
       </section>
     </main>

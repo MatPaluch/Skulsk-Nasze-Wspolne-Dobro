@@ -13,11 +13,11 @@
   height: 100%;
   float: right;
 }
-.logo{
+.logo {
   width: 300px;
   height: 100%;
 }
-.logotypes{
+.logotypes {
   width: 350px;
   height: 100%;
 }
@@ -28,17 +28,45 @@
 .links > a:hover {
   color: rgb(8, 122, 24);
 }
-@media screen and (max-width:700px) {
+.downloadList {
+  list-style: decimal;
+}
+.downloadList > li {
+  margin-top: 16px;
+}
+
+.downloadLinks {
+  max-width: 300px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+  border: 2px solid rgb(75, 185, 103);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+.downloadLinks:hover {
+  color: rgb(8, 122, 24);
+  border-color: rgb(8, 122, 24);
+}
+
+.svgFile {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
   .container > h2 {
     font-size: 20px;
   }
-  .logotypes{
+  .logotypes {
     width: 320px;
   }
-  .headerArticle{
+  .headerArticle {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
-  
 }
