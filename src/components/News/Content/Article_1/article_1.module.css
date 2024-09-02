@@ -6,37 +6,46 @@
 .headerArticle {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-.imgStick {
-  width: 200px;
-  height: 100%;
-  float: right;
+.logoWojewoda {
+  width: 340px;
 }
 .logo {
-  width: 300px;
-  height: 100%;
+  width: 400px;
 }
-.logotypes {
-  width: 350px;
-  height: 100%;
+.secondHeader {
+  text-align: center;
+  text-indent: 30px;
+  font-style: italic;
+  font-size: 20px;
 }
-.links > a {
+.secondHeader > a {
   text-decoration: underline;
   color: rgb(75, 185, 103);
 }
-.links > a:hover {
+.secondHeader > a:hover {
   color: rgb(8, 122, 24);
 }
+.infoWrapper {
+  display: flex;
+  gap: 40px;
+}
+.imgInvalid {
+  width: 200px;
+  height: 100%;
+}
 .downloadList {
-  list-style: decimal;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.downloadList > li {
-  margin-top: 16px;
-}
-
 .downloadLinks {
-  max-width: 300px;
+  max-width: 200px;
+  width: 200px;
   margin-left: 10px;
   display: flex;
   align-items: center;
@@ -55,18 +64,4 @@
 .svgFile {
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 700px) {
-  .container > h2 {
-    font-size: 20px;
-  }
-  .logotypes {
-    width: 320px;
-  }
-  .headerArticle {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
 }

@@ -2,13 +2,13 @@ import { HeroSection } from "../../../Hero/HeroSection";
 import img from "../../../../assets/imgStick.png";
 import logotypes from "../../../../assets/logotypwojewodztwawielkopolskiegoiherbsamorzaduwojewodztwawielkopolskiego.jpg";
 import logo from "../../../../assets/logo.jpg";
-import styles from "./article_1.module.css";
+import styles from "./article_0.module.css";
 import { ReactSVG } from "react-svg";
 import file from "../../../../assets/file-text.svg";
 import Formularz_zgloszeniowy from "../../../../assets/Formularz_zgłoszeniowy.odt";
 import Akceptacja_asystenta from "../../../../assets/Akceptacja_asystenta.docx";
 import Katalog_uslug from "../../../../assets/Katalog_usług.docx";
-export const Art1 = () => {
+export const Art0 = () => {
   return (
     <main>
       <HeroSection />
@@ -44,14 +44,14 @@ export const Art1 = () => {
           <a href="mailto:iwona-milas@wp.pl">iwona-milas@wp.pl</a>
         </p>
         <h3>Główny cel projektu:</h3>
-        <p>
+        <p style={{ textIndent: 30 }}>
           Zwiększenie liczby miejsc świadczenia usług asystenckich/usług wspierających w miejscu
           zamieszkania i specjalistycznych usług opiekuńczych w gminie Skulsk w okresie 01.07.2024
           do 31.11.2024 poprzez objęcie wsparciem w ramach projektu 20 osób wymagających wsparcia w
           codziennym funkcjonowaniu.
         </p>
         <h3>Odbiorcy działań projektowych:</h3>
-        <p>
+        <p style={{ textIndent: 30 }}>
           20 osób nieletnich i pełnoletnich posiadających orzeczenie o znacznym lub umiarkowanym
           stopniu niepełnosprawności, wydanym na podstawie ustawy z dnia 27 sierpnia 1997 r. o
           rehabilitacji zawodowej i społecznej oraz zatrudnieniu osób niepełnosprawnych (Dz.U. z
@@ -61,8 +61,8 @@ export const Art1 = () => {
           uśredniona - część UP może potrzebować większej, część mniejszej liczby godzin wsparcia -
           zakres godzinowy wsparcia dla każdego UP zgodnie z określonymi potrzebami).
         </p>
-        <b>I. Usługi Asystenckie/Wspierające w Miejscu Zamieszkania</b>
-        <p>
+        <b style={{ color: "#00a933" }}>I. Usługi Asystenckie/Wspierające w Miejscu Zamieszkania</b>
+        <p style={{ textIndent: 30 }}>
           <i>
             Wsparcie otrzyma 20 osób, długość i zakres wsparcia dobierany indywidualnie,
             średniomiesięcznie 6h/UP (wartość uśredniona - część UP może potrzebować większej, część
@@ -70,8 +70,8 @@ export const Art1 = () => {
             określonymi potrzebami). Łącznie 400 godzin.
           </i>
         </p>
-        <b>II. Usługi Specjalistyczne</b>
-        <p>
+        <b style={{ color: "#00a933" }}>II. Usługi Specjalistyczne</b>
+        <p style={{ textIndent: 30 }}>
           <i>
             Wsparcie dla 20 osób w celu przełamania problemów UP związanych z ich sytuacją i
             utrudniającym im codzienne funkcjonowanie, pogłębiających marginalizację społeczną.

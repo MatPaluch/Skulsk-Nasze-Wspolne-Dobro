@@ -11,6 +11,9 @@
   gap: 40px;
   padding: 30px;
 }
+.wrapperCard:nth-of-type(odd) {
+  margin-bottom: 50px;
+}
 @media screen and (max-width: 600px) {
   .wrapperCard {
     flex-direction: column;

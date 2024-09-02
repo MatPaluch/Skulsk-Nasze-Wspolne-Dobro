@@ -1,0 +1,73 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.headerArticle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgStick {
+  width: 200px;
+  height: 100%;
+  float: right;
+}
+.logo {
+  width: 300px;
+  height: 100%;
+}
+.logotypes {
+  width: 350px;
+  height: 100%;
+}
+.links > a {
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+}
+.links > a:hover {
+  color: rgb(8, 122, 24);
+}
+.downloadList {
+  list-style: decimal;
+}
+
+.downloadList > li {
+  margin-top: 16px;
+}
+
+.downloadLinks {
+  max-width: 300px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+  border: 2px solid rgb(75, 185, 103);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+.downloadLinks:hover {
+  color: rgb(8, 122, 24);
+  border-color: rgb(8, 122, 24);
+}
+
+.svgFile {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .container > h2 {
+    font-size: 20px;
+  }
+  .logotypes {
+    width: 320px;
+  }
+  .headerArticle {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
