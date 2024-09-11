@@ -10,8 +10,10 @@
 }
 .logoWojewoda {
   width: 340px;
+  height: 100%;
 }
 .logo {
+  height: 100%;
   width: 400px;
 }
 .secondHeader {
@@ -70,5 +72,11 @@
   .infoWrapper{
     flex-direction: column;
     align-items: center;
+  }
+  .logoWojewoda {
+    width: 240px;
+  }
+  .logo {
+    width: 260px;
   }
 }
