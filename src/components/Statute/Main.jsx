@@ -1,9 +1,11 @@
 import { ContactUs } from "../ContactUs/ContactUs";
 import { HeroSection } from "../Hero/HeroSection";
+import { BackToTopButton } from "./BackToTop/BackToTop";
 import styles from "./Main.module.css";
 export const Main = () => {
   return (
     <main>
+      <BackToTopButton/>
       <HeroSection />
       <section className={styles.container}>
         <h2>STATUT</h2>
