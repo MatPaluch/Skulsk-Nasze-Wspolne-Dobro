@@ -13,19 +13,16 @@ The frontend of the "Skulsk Nasze Wspólne Dobro" project is built with **React*
 
 ### Key Features:
 - **Responsive Design**: Ensures a seamless experience across various devices (desktop, tablet, mobile).
-- **State Management**: Uses React's Context API for managing global state and passing data across components.
 - **Component-Based Architecture**: Components are organized in a modular fashion, making it easy to extend and maintain the application.
 - **Routing**: React Router is used to handle navigation between pages and maintain a smooth user experience.
 
 ### Libraries and Tools:
 - **React**: JavaScript library for building user interfaces.
 - **React Router**: For client-side routing and navigation.
-- **Axios**: For making HTTP requests to the backend API.
 - **Styled-components**: For styling React components with a scoped and dynamic approach.
 - **Webpack**: Bundles JavaScript files for the browser, optimizing the build for performance.
 
 ### Future Improvements:
-- State Management Optimization: Exploring more advanced state management solutions (e.g., Redux) if the app grows.
 - PWA Support: Adding Progressive Web App features for offline access and better performance.
 - UI Enhancements: Implementing more user-friendly and interactive design patterns.
 
