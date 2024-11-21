@@ -124,11 +124,13 @@ export const Main = () => {
             </li>
           </ul>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.9345253475892!2d18.32964342947034!3d52.477677696734695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471b4d7d2ff2323f%3A0xf7c94957a49478f8!2sKoni%C5%84ska%2039%2C%2062-560%20Skulsk!5e0!3m2!1spl!2spl!4v1722363447651!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d410.1599101412804!2d18.331595106733612!3d52.477180726592564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471b4d7c95e6bb49%3A0xa91088afd3b636c4!2sSzko%C5%82a%20Podstawowa%20im.%20H.%20Sienkiewicza!5e1!3m2!1spl!2spl!4v1732207180035!5m2!1spl!2spl"
             width="500"
             height="450"
             style={{ border: 0 }}
+            allowfullscreen=""
             loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </section>

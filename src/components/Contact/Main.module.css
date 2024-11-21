@@ -7,7 +7,6 @@
   justify-content: center;
   gap: 30px;
   align-items: center;
-  flex-wrap: wrap;
   padding: 0 30px;
   margin-bottom: 50px;
 }
@@ -21,4 +20,15 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  text-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .list > li {
+    padding: 10px 0px;
+    font-size: 12px;
+  }
 }

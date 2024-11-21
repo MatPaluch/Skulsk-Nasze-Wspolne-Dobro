@@ -8,12 +8,12 @@ import { MobileNav } from "../MobileNav/MobileNav";
 
 export const Navigation = () => {
   const [isActive, setIsActive] = useState(false);
-  const isSmallScreen = useMediaQuery("(max-width:960px)");
+  const isSmallScreen = useMediaQuery("(max-width:1024px)");
 
   const mobileMenuHandler = (ev) => {
     setIsActive(!isActive);
   };
-  
+
   return (
     <nav className={styles.navBar}>
       <NavLink to="/">
@@ -47,7 +47,14 @@ export const Navigation = () => {
           </li>
         </ul>
       )}
-      {isActive && <MobileNav isSmallScreen={isSmallScreen} styles={styles} isActive={isActive} mobileMenuHandler={mobileMenuHandler} />}
+      {isActive && (
+        <MobileNav
+          isSmallScreen={isSmallScreen}
+          styles={styles}
+          isActive={isActive}
+          mobileMenuHandler={mobileMenuHandler}
+        />
+      )}
     </nav>
   );
 };
