@@ -8,5 +8,5 @@ export default defineConfig({
   build: {
     outDir: "./dist",
   },
-  assetsInclude: ["**/*.odt", "**/*.docx"],
+  assetsInclude: ["**/*.odt", "**/*.docx", "**/*.doc"],
 });

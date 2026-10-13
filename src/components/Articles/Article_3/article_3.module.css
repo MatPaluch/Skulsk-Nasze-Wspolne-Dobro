@@ -1,0 +1,88 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.headerArticle {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logoWojewoda {
+  width: 340px;
+  height: 100%;
+}
+.logo {
+  height: 100%;
+  width: 400px;
+}
+.secondHeader {
+  text-align: center;
+  text-indent: 30px;
+  font-style: italic;
+  font-size: 20px;
+}
+.secondHeader > a {
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+}
+.secondHeader > a:hover {
+  color: rgb(8, 122, 24);
+}
+.links > a {
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+}
+.links > a:hover {
+  color: rgb(8, 122, 24);
+}
+.infoWrapper {
+  display: flex;
+  gap: 40px;
+}
+.imgInvalid {
+  width: 200px;
+  height: 100%;
+}
+.downloadList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.downloadLinks {
+  width: 350px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+  border: 2px solid rgb(75, 185, 103);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+.downloadLinks:hover {
+  color: rgb(8, 122, 24);
+  border-color: rgb(8, 122, 24);
+}
+
+.svgFile {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .infoWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoWojewoda {
+    width: 240px;
+  }
+  .logo {
+    width: 260px;
+  }
+}

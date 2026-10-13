@@ -1,12 +1,12 @@
 import styles from "./article_1.module.css";
-import { HeroSection } from "../../../Hero/HeroSection";
-import logo from "../../../../assets/logo.jpg";
-import logoWojewoda from "../../../../assets/wojewoda_wielkopolski.png";
-import invalid from "../../../../assets/invalid_art1.webp";
+import { HeroSection } from "../../Hero/HeroSection";
+import logo from "../../../assets/logo.jpg";
+import logoWojewoda from "../../../assets/wojewoda_wielkopolski.png";
+import invalid from "../../../assets/invalid_art1.webp";
 import { ReactSVG } from "react-svg";
-import file from "../../../../assets/file-text.svg";
-import Formularz_zgloszeniowy from "../../../../assets/Article_1/Formularz_zgłoszeniowy.odt";
-import Katalog_uslug from "../../../../assets/Article_1/Katalog_usług.docx";
+import file from "../../../assets/file-text.svg";
+import Formularz_zgloszeniowy from "../../../assets/Docs/Article_1/Formularz_zgłoszeniowy „Nie jesteś sama, nie jesteś sam”.odt";
+import Katalog_uslug from "../../../assets/Docs/Article_1/Katalog_usług „Nie jesteś sama, nie jesteś sam”.docx";
 
 export const Art1 = () => {
   return (
@@ -101,7 +101,7 @@ export const Art1 = () => {
             <a
               className={styles.downloadLinks}
               href={Formularz_zgloszeniowy}
-              download="Formularz_zgłoszeniowy.odt"
+              download="Formularz_zgłoszeniowy „Nie jesteś sama, nie jesteś sam”.odt"
             >
               <ReactSVG
                 className={styles.svgFile}
@@ -117,7 +117,11 @@ export const Art1 = () => {
           </li>
 
           <li>
-            <a className={styles.downloadLinks} href={Katalog_uslug} download="Katalog_usług.docx">
+            <a
+              className={styles.downloadLinks}
+              href={Katalog_uslug}
+              download="Katalog_usług „Nie jesteś sama, nie jesteś sam”.docx"
+            >
               <ReactSVG
                 className={styles.svgFile}
                 src={file}

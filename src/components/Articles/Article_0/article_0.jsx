@@ -1,13 +1,13 @@
-import { HeroSection } from "../../../Hero/HeroSection";
-import img from "../../../../assets/imgStick.png";
-import logotypes from "../../../../assets/logotypwojewodztwawielkopolskiegoiherbsamorzaduwojewodztwawielkopolskiego.jpg";
-import logo from "../../../../assets/logo.jpg";
+import { HeroSection } from "../../Hero/HeroSection";
+import img from "../../../assets/imgStick.png";
+import logotypes from "../../../assets/logotypwojewodztwawielkopolskiegoiherbsamorzaduwojewodztwawielkopolskiego.jpg";
+import logo from "../../../assets/logo.jpg";
 import styles from "./article_0.module.css";
 import { ReactSVG } from "react-svg";
-import file from "../../../../assets/file-text.svg";
-import Formularz_zgloszeniowy from "../../../../assets/Formularz_zgłoszeniowy.odt";
-import Akceptacja_asystenta from "../../../../assets/Akceptacja_asystenta.docx";
-import Katalog_uslug from "../../../../assets/Katalog_usług.docx";
+import file from "../../../assets/file-text.svg";
+import Formularz_zgloszeniowy from "../../../assets/Docs/Article_0/Formularz_zgłoszeniowy „Działalność na rzecz osób niepełnosprawnych”.odt";
+import Akceptacja_asystenta from "../../../assets/Docs/Article_0/Akceptacja_asystenta.docx";
+import Katalog_uslug from "../../../assets/Docs/Article_0/Katalog_usług „Działalność na rzecz osób niepełnosprawnych”.docx";
 export const Art0 = () => {
   return (
     <main>
@@ -100,7 +100,7 @@ export const Art0 = () => {
             <a
               className={styles.downloadLinks}
               href={Formularz_zgloszeniowy}
-              download="Formularz_zgłoszeniowy.odt"
+              download="Formularz_zgłoszeniowy „Działalność na rzecz osób niepełnosprawnych”.odt"
             >
               <ReactSVG
                 className={styles.svgFile}
@@ -133,7 +133,11 @@ export const Art0 = () => {
             </a>
           </li>
           <li>
-            <a className={styles.downloadLinks} href={Katalog_uslug} download="Katalog_usług.docx">
+            <a
+              className={styles.downloadLinks}
+              href={Katalog_uslug}
+              download="Katalog_usług „Działalność na rzecz osób niepełnosprawnych”.docx"
+            >
               <ReactSVG
                 className={styles.svgFile}
                 src={file}

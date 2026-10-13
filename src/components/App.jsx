@@ -7,15 +7,17 @@ import { ContactPage } from "../pages/Contact";
 import { PageNotFound } from "../pages/PageNotFound";
 import { NewsPage } from "../pages/News";
 import { Articles } from "../pages/Articles";
+import { ProjectsPage } from "../pages/Projects";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="news" element={<NewsPage />}></Route>{" "}
-        <Route path="news/:name" element={<Articles />} />
+        <Route path="news" element={<NewsPage />} />
+        <Route path="article/:name" element={<Articles />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="projects" element={<ProjectsPage />} />
         <Route path="statute" element={<StatutePage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="*" element={<PageNotFound />} />
