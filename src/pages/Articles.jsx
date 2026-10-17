@@ -5,6 +5,8 @@ import { Art2 } from "../components/Articles/Article_2/article_2";
 import { Art3 } from "../components/Articles/Article_3/article_3";
 import { Art4 } from "../components/Articles/Article_4/article_4";
 import { Art5 } from "../components/Articles/Article_5/article_5";
+import { Art6 } from "../components/Articles/Article_6/article_6";
+import { Art7 } from "../components/Articles/Article_7/article_7";
 
 export const Articles = () => {
   const { name } = useParams();
@@ -23,6 +25,10 @@ export const Articles = () => {
         return <Art4 />;
       case "zainwestuj-w-zdrowie-to-sie-oplaca":
         return <Art5 />;
+      case "zainwestuj-w-zdrowie-to-sie-oplaca-edycja-ii":
+        return <Art6 />;
+      case "krok-w-strone-zdrowia":
+        return <Art7 />;
       default:
         return <h1 style={{ marginTop: "200px" }}>Nie ma takiego ogłoszenia</h1>;
     }

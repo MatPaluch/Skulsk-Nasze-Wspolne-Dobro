@@ -2,7 +2,6 @@ import styles from "./article_3.module.css";
 import { HeroSection } from "../../Hero/HeroSection";
 import logo from "../../../assets/logo.jpg";
 import logoWojewoda from "../../../assets/wojewoda_wielkopolski.png";
-import invalid from "../../../assets/invalid_art1.webp";
 import { ReactSVG } from "react-svg";
 import file from "../../../assets/file-text.svg";
 import Formularz_zgloszeniowy from "../../../assets/Docs/Article_3/Formularz zgłoszeniowy-asystentura.odt";
