@@ -27,7 +27,7 @@ export const Main = () => {
               <div>
                 <b>Lokalizacja:</b>
                 <br />
-                <span>ul. Konińska 39,</span>
+                <span>ul. dr Michała Ilczyszyna 2B</span>
                 <br />
                 <span> 62-560 Skulsk</span>
               </div>
