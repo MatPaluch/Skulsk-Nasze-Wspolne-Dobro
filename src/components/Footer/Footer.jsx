@@ -67,7 +67,7 @@ export const Footer = () => {
         </div>
       </div>
       <p className={styles.copy}>
-        Copyright &copy; 2024 STOWARZYSZENIE &quot;SKULSK - NASZE WSPÓLNE DOBRO&quot;
+        Copyright &copy; 2026 STOWARZYSZENIE &quot;SKULSK - NASZE WSPÓLNE DOBRO&quot;
       </p>
     </footer>
   );
