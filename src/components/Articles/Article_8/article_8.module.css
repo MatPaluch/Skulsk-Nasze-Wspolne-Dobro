@@ -1,0 +1,90 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.headerArticle {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.logoEU {
+  height: 100%;
+  width: 100%;
+}
+.secondHeader {
+  text-align: center;
+  text-indent: 30px;
+  font-style: italic;
+  font-size: 20px;
+}
+.secondHeader > a {
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+}
+.secondHeader > a:hover {
+  color: rgb(8, 122, 24);
+}
+.links > a {
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+}
+.links > a:hover {
+  color: rgb(8, 122, 24);
+}
+.infoWrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.downloadList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+
+  padding: 0;
+}
+.downloadLinks {
+  width: 280px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  color: rgb(75, 185, 103);
+  border: 2px solid rgb(75, 185, 103);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+.downloadLinks:hover {
+  color: rgb(8, 122, 24);
+  border-color: rgb(8, 122, 24);
+}
+
+.svgFile {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 940px) {
+  .headerArticle {
+    padding-bottom: 20px;
+  }
+  .downloadList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 16px;
+  }
+  .downloadList {
+    align-items: center;
+  }
+}

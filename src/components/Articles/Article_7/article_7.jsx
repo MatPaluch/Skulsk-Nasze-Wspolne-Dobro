@@ -4,7 +4,7 @@ import logo from "../../../assets/logo.jpg";
 import logoWojewoda from "../../../assets/wojewoda_wielkopolski.png";
 import { ReactSVG } from "react-svg";
 import file from "../../../assets/file-text.svg";
-import FormularzAsystenta from "../../../assets/Docs/Article_3/Formularz zgłoszeniowy-asystentura.odt";
+import FormularzAsystenta from "../../../assets/Docs/Article_7/Formularz zgłoszeniowy-asystentura.odt";
 
 export const Art7 = () => {
   return (

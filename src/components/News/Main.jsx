@@ -2,21 +2,39 @@ import { HeroSection } from "../Hero/HeroSection";
 import styles from "./Main.module.css";
 import krokWStroneZdrowia from "../../assets/CardImg/krokWStronęZdrowia.png";
 import zainwestujWZdrowieII from "../../assets/CardImg/zainwestujwZdrowieII.png";
+import NieDlaDyskryminacji from "../../assets/CardImg/NieDlaDyskryminacji.png";
 import { useNavigate } from "react-router-dom";
 import { ContactUs } from "../ContactUs/ContactUs";
 export const Main = () => {
   const navigate = useNavigate();
+  const handleClickArticle_8 = () => {
+    navigate("/article/nie-dla-dyskryminacji-ze-wzgledu-na-niepelnosprawnosc-i-wiek");
+  };
   const handleClickArticle_7 = () => {
     navigate("/article/krok-w-strone-zdrowia");
   };
   const handleClickArticle_6 = () => {
     navigate("/article/zainwestuj-w-zdrowie-to-sie-oplaca-edycja-ii");
   };
+
   return (
     <main>
       <HeroSection />
       <section className={styles.container}>
         <h1>Aktualności</h1>
+        <div className={styles.wrapperCard}>
+          <img src={NieDlaDyskryminacji} alt="Obraz" className={styles.image} />
+          <div className={styles.cardDesc}>
+            <h2>Projekt „Nie dla dyskryminacji, ze względu na niepełnosprawność i wiek!”</h2>
+            <p>
+              Celem głównym projektu jest wzrost kompetencji na temat przepisów i polityk
+              antydyskryminacyjnych wśród osób z obszaru województwa wielkopolskiego osób
+              bezpośrednio doświadczających dyskryminacji ze względu na wiek i/lub
+              niepełnosprawność, ...
+            </p>
+            <button onClick={handleClickArticle_8}>Czytaj więcej...</button>
+          </div>
+        </div>
         <div className={styles.wrapperCard}>
           <img src={krokWStroneZdrowia} alt="Obraz" className={styles.image} />
           <div className={styles.cardDesc}>
